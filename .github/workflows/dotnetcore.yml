@@ -23,5 +23,8 @@ jobs:
       run: dotnet restore src/go2cs.sln
     - name: Build
       run: dotnet build --configuration Release --no-restore src/go2cs/go2cs.csproj
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v1
+      with: 
+        name: dist
+        path: dist
