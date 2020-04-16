@@ -20,8 +20,8 @@ jobs:
     - name: Change Dir
       run: cd src
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore src/go2cs.sln
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore src/go2cs/go2cs.csproj
     - name: Test
       run: dotnet test --no-restore --verbosity normal
