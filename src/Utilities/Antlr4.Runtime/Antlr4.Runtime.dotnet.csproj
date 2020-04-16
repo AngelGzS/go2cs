@@ -9,7 +9,7 @@
     <AssemblyName>Antlr4.Runtime.Standard</AssemblyName>
     <AssemblyOriginatorKeyFile>../../Antlr4.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>false</SignAssembly>
-    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">false</PublicSign>
     <PackageId>Antlr4.Runtime.Standard</PackageId>
     <Title>ANTLR 4 .NET Standard Runtime</Title>
     <Authors>Eric Vergnaud, Terence Parr, Sam Harwell</Authors>
